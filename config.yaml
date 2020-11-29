@@ -1,18 +1,19 @@
-# here you can configure your bot however you like
-# id's should be strings or you may get parse errors or it may not work
+# welcome to config.yaml
+# help: https://github.com/Jakwee/M0d/wiki/Configuring-Your-Bot
 
-token: '[your discord bot token]'
-guild: 'the id of the guild that your bot functions in'
-prefix: '-' # the prefix for all commands | put this in quotes to be safe or you may get a parse error
+token:
+guild:
+prefix: '-' # put this in quotes to be safe or you may get a parse error
 roles:
   mod:
-    - 'ids of roles that can use commands'
-  muted: 'id of the role to assign to members when they are muted'
-logs: # add a channel id or webhook id/url to log these actions and events there. put nothing to disable that type of logging
-  commands: 'a channel id'
-  actions: 'a webhook id'
+    -
+    -
+  muted:
+logs:
+  commands:
+  actions:
   member:
-    join: 'or a webhook url'
+    join:
     leave:
     kick:
     ban:
