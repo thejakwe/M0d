@@ -1,0 +1,26 @@
+{
+  "name": "M0d",
+  "version": "0.0.1",
+  "description": "Just another Discord moderation bot. Written in discord.js",
+  "keywords": [
+    "discord",
+    "discord.js",
+    "node.js",
+    "M0d",
+    "moderation",
+    "bot"
+  ],
+  "homepage": "https://github.com/Jakwee/M0d#readme",
+  "bugs": "https://github.com/Jakwee/M0d/issues",
+  "licence": "MIT",
+  "author": "Jake Soliman",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "moment": "^2.29.1",
+    "yaml": "^1.10.0"
+  }
+}

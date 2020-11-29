@@ -1,0 +1,5 @@
+node_modules/
+.npm
+.git
+package-lock.json
+config.yaml
