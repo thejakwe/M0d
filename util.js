@@ -1,5 +1,5 @@
 exports.isMod = m => {
-  return m.hasPermission("ADMINISTRATOR") || Array.from(m.roles.cache.keys()).some(r => global.config.roles.mod.includes(r));
+  return m.hasPermission("ADMINISTRATOR") || global.config.roles.mod.includes(m.id) || Array.from(m.roles.cache.keys()).some(r => global.config.roles.mod.includes(r));
 }
 
 exports.cleanJSON = json => { // convert all numbers to strings and delete any null values and empty objects
