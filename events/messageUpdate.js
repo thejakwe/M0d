@@ -18,6 +18,7 @@ module.exports = (o, n) => {
       .addField("Time", now.format())
     );
 
+  // ISSUE need to get audit logs to see who it was pinned by
   if (o.pinned != undefined && n.pinned != undefined && o.pinned != n.pinned) { // booleans
     if (n.pinned)
       global.util.log('message.pin', new global.Discord.MessageEmbed()
