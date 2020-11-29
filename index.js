@@ -45,5 +45,5 @@ fs.readdir('./events', (err, files) => { // load files from the events folder
   });
 });
 
-client.on('warn', console.warn);
-client.on('error', console.error);
+client.on('warn', console.warn); // log discord warnings
+client.on('error', console.error); // and errors
