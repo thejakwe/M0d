@@ -27,7 +27,7 @@ global.client = client;
 global.util = require('./util');
 // global.db = require('some sort of json editing package').create("db.json"); // TODO
 
-// packages
+// load packages
 global.moment = moment;
 global.Discord = Discord;
 
