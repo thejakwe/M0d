@@ -1,3 +1,22 @@
+exports.resolveID = u => {
+  if (u.id) { // is user object
+    return u.id;
+  } else if (/^<@!?\d{15,19}>$/.test(u)) { // user mention (<@ID> or <@!ID>)
+    return u.match(/\d{15,19}/)[0];
+  } else if (/^\d{15,19}$/.test(u)) { // user id (012345678901234567)
+    return u;
+  } else if (/^.+#\d{4}$/.test(u)) { // user tag (User#0000)
+    // this isnt perfect and will only find cached users. we can't cache everyone because that would take forever and succ ram
+    // fix: discord adds and api request to get a user by tag (User#0000)
+    // it shouldn't be too hard? i mean how do friends requests work then lol
+    var user = global.client.users.cache.find(user => user.tag == u);
+    if (user) return userCache.id;
+    return undefined;
+  } else {
+    return undefined;
+  }
+}
+
 exports.isMod = m => {
   return m.hasPermission("ADMINISTRATOR") || global.config.roles.mod.includes(m.id) || Array.from(m.roles.cache.keys()).some(r => global.config.roles.mod.includes(r));
 }
