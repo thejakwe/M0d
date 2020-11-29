@@ -25,7 +25,7 @@ client.login(configJSON.token);
 global.config = configJSON;
 global.client = client;
 global.util = require('./util');
-// global.db = require('some sort of json editing package').create("db.json"); // TODO
+// global.db = require('some sort of json editing package').create("db.json"); // TODO need a package
 
 // load packages
 global.moment = moment;
