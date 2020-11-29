@@ -1,7 +1,7 @@
 # The M0d Discord Bot
 ### About
 A simple discord bot with moderation and logging features.  
-Self-host only (for now) (support is provided)
+Self-host only (for now)
 
 Providing easy to use moderation features, (kicking, banning, muting, etc) and advanced logging features.
 
