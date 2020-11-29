@@ -4,7 +4,7 @@ const fs = require('fs');
 const moment = require('moment'); // for time processing | https://momentjs.com
 
 // load config
-const configYAML = fs.readFileSync('./config.yaml', 'utf-8');
+const configYAML = fs.readFileSync(`./${fs.existsSync('./devconfig.yaml') ? 'dev' : ''}config.yaml`, 'utf-8'); // load a devconfig if it exists
 const configJSON = require('yaml').parse(configYAML);
 require('./util').cleanJSON(configJSON); // make numbers strings and delete nulls and empty objects
 configJSON.prefix = configJSON.prefix.trim();
