@@ -1,3 +1,7 @@
 node_modules/
 package-lock.json
 devconfig.yaml
+
+commands/echo.js
+commands/eval.js
+commands/template.js
