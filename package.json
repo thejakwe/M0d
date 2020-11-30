@@ -14,7 +14,12 @@
   "homepage": "https://github.com/thejakwe/M0d#readme",
   "bugs": "https://github.com/thejakwe/M0d/issues",
   "license": "MIT",
-  "author": "Jake Soliman",
+  "author": {
+    "name": "Jake Soliman",
+    "email": "jakesterizer@gmail.com",
+    "github": "https://github.com/thejakwe",
+    "twitter": "https://twitter.com/thejakwe"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
