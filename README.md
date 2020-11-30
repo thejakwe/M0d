@@ -1,3 +1,4 @@
+**THIS IS A WORK IN PROGRESS**
 # The M0d Discord Bot
 ### About
 A simple discord bot with moderation and logging features.  
