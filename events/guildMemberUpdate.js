@@ -1,3 +1,1 @@
-module.exports = (o, n) => {
-
-}
+module.exports = (o, n) => {}
