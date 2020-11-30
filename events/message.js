@@ -15,7 +15,7 @@ module.exports = msg => {
     .setDescription(`\n${msg.content}\n\`\`\`${msg.content}\`\`\``)
     .setTimestamp()
     .setColor('0000FF')
-    .addField("User", `<@!${msg.author.id}>\n${msg.author.id}`, true)
+    .addField("User", `<@${msg.author.id}>\n${msg.author.id}`, true)
     .addField("Channel", `<#${msg.channel.id}>\n${msg.channel.id}`, true)
     .addField("Message", `[Jump to message](${msg.url})\n${msg.id}`, true)
     .addField("Time", now.format())

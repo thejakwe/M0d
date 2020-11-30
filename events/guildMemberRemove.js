@@ -31,7 +31,7 @@ module.exports = m => {
         .setTimestamp()
         .setColor("FF0000")
         .addField("Member", `<@${m.user.id}>\n${m.user.id}`, true)
-        .addField("Moderator", `<@!${log.executor.id}>\n${log.executor.id}`, true)
+        .addField("Moderator", `<@${log.executor.id}>\n${log.executor.id}`, true)
         .addField("Reason", !log.reason ? "Not Provided" : log.reason)
         .addField("Time", now.format())
       );

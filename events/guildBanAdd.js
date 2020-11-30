@@ -9,7 +9,7 @@ module.exports = (g, u) => {
         .setFooter(log.executor.tag, log.executor.displayAvatarURL())
         .setTimestamp()
         .setColor("FF0000")
-        .addField("Moderator", `<@!${log.executor.id}>\n${log.executor.id}`, true)
+        .addField("Moderator", `<@${log.executor.id}>\n${log.executor.id}`, true)
         .addField("Member", `<@${u.id}>\n${u.id}`, true)
         .addField("Reason", !log.reason ? "Not Provided" : log.reason)
         .addField("Time", now.format())

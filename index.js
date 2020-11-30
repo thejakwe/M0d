@@ -17,7 +17,8 @@ moment.defaultFormat = "ddd, MMM DD, YYYY HH:mm:ss Z"; // Fri, Mar 13, 2019 16:2
 const client = new Discord.Client({
   http: {
     version: 6 // use v6 then switch to v8 when v6 gets discontinued | will have to make some changes like message types, etc
-  }
+  },
+  fetchAllMembers: true
 });
 client.login(configJSON.token);
 
