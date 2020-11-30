@@ -10,9 +10,9 @@
     "moderation",
     "bot"
   ],
-  "repository": "https://github.com/Jakwee/M0d",
-  "homepage": "https://github.com/Jakwee/M0d#readme",
-  "bugs": "https://github.com/Jakwee/M0d/issues",
+  "repository": "https://github.com/thejakwe/M0d",
+  "homepage": "https://github.com/thejakwe/M0d#readme",
+  "bugs": "https://github.com/thejakwe/M0d/issues",
   "license": "MIT",
   "author": "Jake Soliman",
   "main": "index.js",
